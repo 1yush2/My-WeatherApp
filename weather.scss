@@ -84,13 +84,12 @@ body{
             .searchTxt{
                 border: none;
                 outline: none;
-                padding: 0.5em 1em;
+                padding: 0.5em 0.2em;
                 border-radius: 26px;
                 background: $primaryBackColor;
                 color: $primaryColor;
                 font-family: 'Hina Mincho', serif;
                 font-size: 110%;
-                width: calc(100%-100px);
             }
             button{
                 border: none;
