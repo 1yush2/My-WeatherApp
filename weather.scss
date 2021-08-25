@@ -1,4 +1,4 @@
-$primaryBackColor : #7c7c7c2b;
+$primaryBackColor : #1414142b;
 $primaryColor : #fffffff3;
 $boxCOlor : rgba(7, 36, 53, 0.7);
 @import url('https://fonts.googleapis.com/css2?family=Hina+Mincho&display=swap');
@@ -9,8 +9,9 @@ $boxCOlor : rgba(7, 36, 53, 0.7);
 }
 
 body{
-    background-image: url('./images/bg.jpg');
+    background-image: url('./images/welcome.jpg');
     background-size: cover;
+    background-repeat: no-repeat;
     color: $primaryColor;
     display: flex;
     justify-content: center;
@@ -22,12 +23,29 @@ body{
         flex-direction: column;
         /* align-items: center; */
         background-color: $boxCOlor;
-        padding: 2em;
+        padding: 1.5em;
         border-radius: 20px;
         width: 100%;
-        max-width: 450px;
+        max-width: 400px;
         margin: 1em;
         font-family: 'Hina Mincho', serif;
+        .btn{
+            display: block;
+            outline: none;
+            border: none;
+            max-width: 9em;
+            width: 100%;
+            border-radius: 30px;
+            margin-left: 30%;
+            color: $primaryColor;
+            background: $boxCOlor;
+            padding: 1em;
+            font-family: 'Hina Mincho', serif;
+            font-size: 1em;
+            &:hover{
+                background: rgb(101, 194, 14);
+            }
+        }
         .appName{
             display: flex;
             justify-content: center;
@@ -37,10 +55,10 @@ body{
             display: flex;
             justify-content: center;
         }
-        .temperature{
+        .weatherNumber{
             display: flex;
             justify-content: center;
-            font-size: 200%;
+            font-size: 4.1em;
             span{
                 font-size: 50%;
             }
@@ -60,7 +78,7 @@ body{
             }
         }
         .searchBar{
-            display: flex;
+            display: none;
             justify-content: center;
             flex-wrap: wrap;
             .searchTxt{
