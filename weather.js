@@ -24,7 +24,14 @@ searchBox.addEventListener('keypress', e =>{
 
 let getWeather = (city) => {
     fetch(`https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=30f15b4ebd315c621e7659d7cdb3c04e&units=metric`)
-    .then(res => res.json())
+    .then((res) => {
+        if(res.ok){
+            console.log('worrks');
+            return res.json();
+        }else {
+            console.log('Something went wrong');
+        }
+    })
     .then( data => {
         locationName.innerHTML = `${data.name}, ${data.sys.country}`
         currentTemperature.innerText = `${Math.round(data.main.temp)}°c`
@@ -45,9 +52,11 @@ let getWeather = (city) => {
             document.body.style.backgroundImage = "url('./images/thunderstorm.jpg')"
         }else if(weatherDetails.textContent == "Drizzle"){
             document.body.style.backgroundImage = "url('./images/drizzle.jpg')"
-        }else if(weatherDetails.textContent == "Haze"){
+        }else if(weatherDetails.textContent == "aze"){
             document.body.style.backgroundImage = "url('./images/haze.jpg')"
         }
+    }).catch((error) => {
+        console.log(error)
     })
 }
 // calls for API and changes the data according to API, also added if/else for changing background color according to weather as well as added date function to get the time
