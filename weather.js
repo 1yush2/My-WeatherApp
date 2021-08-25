@@ -43,9 +43,9 @@ let getWeather = (city) => {
             document.body.style.backgroundImage = "url('./images/snow.jpg')"
         }else if(weatherDetails.textContent == "Thunderstorm"){
             document.body.style.backgroundImage = "url('./images/thunderstorm.jpg')"
-        }else if(weatherDetails.textContent == "drizzle"){
+        }else if(weatherDetails.textContent == "Drizzle"){
             document.body.style.backgroundImage = "url('./images/drizzle.jpg')"
-        }else if(weatherDetails.textContent == "haze"){
+        }else if(weatherDetails.textContent == "Haze"){
             document.body.style.backgroundImage = "url('./images/haze.jpg')"
         }
     })
