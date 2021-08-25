@@ -96,12 +96,14 @@ body .appBox .weatherNumber span {
 }
 
 body .appBox .location {
-  margin-top: 1em;
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-columns: 1fr;
-      grid-template-columns: 1fr;
-  gap: 8px;
+  margin-top: 0.5em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 
 body .appBox .location .locationName {
@@ -120,6 +122,8 @@ body .appBox .location .day {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 
 body .appBox .searchBar {
@@ -140,6 +144,7 @@ body .appBox .searchBar .searchTxt {
   color: #fffffff3;
   font-family: 'Hina Mincho', serif;
   font-size: 110%;
+  width: calc(100%-100px);
 }
 
 body .appBox .searchBar button {
