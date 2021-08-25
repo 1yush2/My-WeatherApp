@@ -1,0 +1,140 @@
+@import url("https://fonts.googleapis.com/css2?family=Hina+Mincho&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  background-image: url("./images/bg.jpg");
+  background-size: cover;
+  color: #fffffff3;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 100vh;
+}
+
+body .appBox {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  /* align-items: center; */
+  background-color: rgba(7, 36, 53, 0.7);
+  padding: 2em;
+  border-radius: 20px;
+  width: 100%;
+  max-width: 450px;
+  margin: 1em;
+  font-family: 'Hina Mincho', serif;
+}
+
+body .appBox .appName {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-bottom: 1em;
+}
+
+body .appBox .weatherDetails {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+body .appBox .temperature {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  font-size: 200%;
+}
+
+body .appBox .temperature span {
+  font-size: 50%;
+}
+
+body .appBox .location {
+  margin-top: 1em;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr;
+      grid-template-columns: 1fr;
+  gap: 8px;
+}
+
+body .appBox .location .locationName {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+body .appBox .location .day {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+body .appBox .searchBar {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+body .appBox .searchBar .searchTxt {
+  border: none;
+  outline: none;
+  padding: 0.5em 1em;
+  border-radius: 26px;
+  background: #7c7c7c2b;
+  color: #fffffff3;
+  font-family: 'Hina Mincho', serif;
+  font-size: 110%;
+}
+
+body .appBox .searchBar button {
+  border: none;
+  outline: none;
+  border-radius: 50%;
+  width: 3em;
+  height: 3.1em;
+}
+
+body .appBox .searchBar button:hover {
+  background: blanchedalmond;
+  cursor: pointer;
+  -webkit-transition: 0.4;
+  transition: 0.4;
+}
